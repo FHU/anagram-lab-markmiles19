@@ -29,5 +29,5 @@ def anagram(word1, word2):
 if __name__ == '__main__':
     user_input1 = input().upper().replace(' ', '')
     user_input2 = input().upper().replace(' ', '')
-    anagram(user_input1, user_input2)
+    print(anagram(user_input1, user_input2))
     
