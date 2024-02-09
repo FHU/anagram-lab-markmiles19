@@ -12,6 +12,8 @@ letterCount2 = {'A':0, 'B':0, 'C':0, 'D':0, 'E':0, 'F':0,
                'Y':0, 'Z':0}
 
 def anagram(word1, word2):
+    word1 = word1.upper().replace(' ', '')
+    word2 = word2.upper().replace(' ', '')
     for letter in word1:
         letterCount1[letter] += 1
     for letter in word2:
@@ -27,7 +29,7 @@ def anagram(word1, word2):
             return False
 
 if __name__ == '__main__':
-    user_input1 = input().upper().replace(' ', '')
-    user_input2 = input().upper().replace(' ', '')
+    user_input1 = input()
+    user_input2 = input()
     print(anagram(user_input1, user_input2))
     
